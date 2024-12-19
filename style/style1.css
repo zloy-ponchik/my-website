@@ -1,0 +1,169 @@
+/*Специфично для первого макета*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap');
+/*Стили основного контента специфичные для пнрвого макета*/
+.content{
+    font-size: 14pt;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #a4a6baaa;
+}
+.content-center{
+    width: 70%;
+    padding: 2% 5% 5% 5%;
+    background-color: #ffffff;
+}
+.profile-info{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start ;
+    justify-content: center;
+}
+.welcome h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25pt;
+    color: rgb(25, 55, 94);
+    margin: 15px 0px;
+}
+.welcome p{
+    font-family: "Caveat", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20pt;
+}
+.content .icon{
+    width: 60%;
+    min-width: 150px;
+}
+.content .icon img{
+    border-radius: 25px;
+}
+.content-text{
+    margin-right: 10%;
+    font-size: 15pt;
+}
+.content-text h2{
+    margin: 20px 0;
+    font-size: 20pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(36, 44, 58);
+    text-align: left;
+}
+.content-text h2:first-child{
+    margin-top: 100px;
+}
+.content-text p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    color: #313131;
+}
+iframe{
+    width: 70%;
+    height: 300px;
+}
+@media(max-width: 1340px) and (min-width: 890px){
+    .content-center{
+        width: 70%;
+    }
+    .welcome h1{
+        font-size: 19pt;
+    }
+    .welcome p{
+        font-size: 19pt;
+    }
+    iframe{
+        width: 85%;
+    }
+}
+@media(max-width: 890px) and (min-width: 620px){
+    .content-center{
+        width: 100%;
+    }
+    .welcome h1{
+        font-size: 18pt;
+    }
+    .welcome p{
+        font-size: 18pt;
+    }
+    .content .icon img{
+        border-radius: 75px;
+    }
+    .content-text{
+        margin-right: 7%;
+        font-size: 12pt;
+    }
+    .content-text h2{
+        font-size: 15pt;
+    }
+    iframe{
+        width: 100%;
+        height: 250px;
+    }
+}
+@media(max-width: 620px) and (min-width: 490px){
+    .content-center{
+        width: 100%;
+    }
+    .content-text h2:first-child{
+        margin-top: 40px;
+    }
+    iframe{
+        width: 100%;
+        height: 220px
+    }
+    .welcome h1{
+        font-size: 18pt;
+    }
+    .welcome p{
+        font-size: 18pt;
+    }
+    .content .icon img{
+        border-radius: 75px;
+    }
+    .content-text{
+        margin-right: 7%;
+        font-size: 12pt;
+    }
+    .content-text h2{
+        font-size: 15pt;
+    }
+}
+@media(max-width: 490px) and (min-width: 40px){
+    .content-center{
+        width: 100%;
+    }
+    .content-text h2:first-child{
+        margin-top: 30px;
+    }
+    iframe{
+        width: 100%;
+        height: 190px;
+    }
+    .welcome h1{
+        font-size: 15pt;
+    }
+    .welcome p{
+        font-size: 15pt;
+    }
+    .content .icon img{
+        border-radius: 60px;
+    }
+    .content .icon{
+        min-width: 120px;
+    }
+    .content-text{
+        margin-right: 7%;
+        font-size: 11pt;
+    }
+    .content-text h2{
+        font-size: 13pt;
+    }
+}
