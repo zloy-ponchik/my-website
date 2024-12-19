@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт 2.0 - Услуги</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/normalize.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/style_modal.css">
+    <link rel="stylesheet" href="../style/style2.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <!--Шапка-->
+        <section class="header-content">
+            <div class="logo"><img src="../image/logo4.jpg" alt="logo"></div>
+            <div class="autor-info">
+                <div class="group">ЭФБО-03-23</div>
+                <div class="name">Ярастов Никита</div>
+            </div>
+        </section>
+        
+    </header>
+    <div id="top-alert" class="war-alert">
+        Неизвестная ошибка!
+    </div>
+            <!--Меню-->
+        
+            <div class="navbar-sticky">
+                <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: rgba(8, 82, 147, 0.99); z-index: 10;">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                            Навигация
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="../index1.html">Главная</a>
+                            <a class="nav-link" href="index3.html">Первый семестр</a>
+                            <a class="nav-link" href="#">Второй семестр</a>
+                            <a class="nav-link active" aria-current="page" href="index2.html">Услуги</a>
+                            <a class="nav-link" href="#">Авторизация</a>
+                        </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+
+
+    <main>
+        <!--Панель навигации-->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Навигация по сайту</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <div class="navigator-title">Разделы сайта</div>
+                    <div class="navigator-link" data-bs-dismiss="offcanvas"><a href="index2.html#title">&#10163;Разработка</a></div>
+                    <div class="navigator-link" data-bs-dismiss="offcanvas"><a href="index2.html#faq">&#10163;FaQ</a></div>
+                </div>
+            </div>
+            </div>
+
+        <div class="up-arrow"><a href="#header"><img src="../image/strelkaicon.svg.png" alt="/\"></a></div>
+
+
+
+        <!--Основной контент-->
+        <section class="content">
+            <section class="content-center">
+            <h1 id="title">Разработка веб приложений</h1>
+            <!--Карточки предложений-->
+
+            
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 95%;">
+                            <img src="../image/logo.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Сайт-визитка</h5>
+                                <a href="#" class="btn btn-primary open-modal" data-service="Сайт-визитка">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="col-sm-4">
+                    <div class="card" style="width: 95%;">
+                        <img src="../image/cardkoop.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Корпоративный сайт</h5>
+                            <a href="#" class="btn btn-primary open-modal" data-service="Корпоративный сайт">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card" style="width: 95%;">
+                        <img src="../image/cardshop.jpg" class="card-img-top" alt="...">
+
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Интерент-магазин</h5>
+                            <a href="#" class="btn btn-primary open-modal" data-service="Интерент-магазин">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+
+
+            <!--Modal-->
+            
+            <section class="modal" id="modal">
+                <span class="close">&times;</span>
+                <div class="modal-content">
+                    
+                <h3 id="modal-title">Разработка веб-приложений</h3>
+                <p>Заполните форму и мы обязательно свяжемся с вами<br> в ближайшее время для уточнения деталей</p>
+                <form action="" id="add-form">
+                    <label><span>Ваше имя:</span><input id="name" type="text" placeholder="Иванов Иван Иванович"></label>
+                    <label><span>Ваш e-mail: </span><input type="email" id="email" placeholder="example@mail.com"></label>
+                    <label><span>Телефон: </span><input type="tel" id="phone" placeholder="+7 999 999 99 99" ></label>
+            
+                    <label><span>Страна: </span><select name="" id="contry">
+                        <option value="">Российская Федерация</option>
+                        <option value="">Республика Беларусь</option>
+                        <option value="">Казахстан</option>
+                    </select></label>
+            
+                    <label><span>Дата: </span><input type="date" id="date" ></label>
+                    <label><span>Комментарий: </span><textarea id="comment"></textarea></label>
+                    <label class="chek"><input type="checkbox" id="check"> Согласен на обработку моих персональных данных</label>
+                    <button type="submit" id="submit" class="btn btn-primary" on>Заказать</button>
+                </form>
+            </div>
+            </section>
+
+
+
+
+
+
+
+            <!--Основное наполнение-->
+            <div class="content-text">
+
+            <h2 id="faq" class="content-title">FaQ по разработке сайтов</h2>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Нужен ли мне сайт, если я – предприниматель, рассказываю о себе в одноклассниках? 
+                        Вяжу и шью игрушки, сувениры, есть небольшой павильон на рынке.
+                    </button>
+                    </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                            Нужен ли сайт – решать только вам. Но сейчас – период стремительного развития бизнеса
+                            в интернет-пространстве. Вы сможете продавать свои товары не только стоя за прилавком.
+                            О вашем ассортименте узнает широкая аудитория. Можете попробовать получить тематические
+                            заявки, порадовать соотечественников из других городов.
+                            Страничка в соцсетях имеет ограниченные перспективы, поисковики при введении пользователем
+                            запроса отдают приоритет разумно организованным ресурсам с учетом правил, наличием ключевых слов 
+                            в уникальных текстах и размещением наглядности. Рассмотрите аккуратную одностраничную визитку 
+                            – лендинг. Стоимость создания такого сайта не смущает, а доход он может принести существенный.
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Что входит в корпоративный инфосайт? Возможна ли не только его разработка, но и сопровождение?
+                    </button>
+                    </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Корпоративный ресурс может состоять из разных блоков по желанию заказчика. Создание сайта – цена
+                        его зависит напрямую от объема работ – предполагает примерную структуру: главную страницу, размещение портфолио,
+                        описание услуг, новости или дополнительную информацию, контакты и все, что вы посчитаете важным.
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+
+            
+                
+            </div>
+        </section>
+    </section>
+    </main>
+
+    <!--"Подвал"-->
+    <footer>
+        <div class="copyright-info">&copy Ярастов Никита </div>
+        <div class="messendger">
+            <img src="../image/vklogo.png" alt="vk">
+            <img src="../image/metalogo.png" alt="instagram">
+        </div>
+    </footer>
+
+
+
+<script src="../script_js/script_modal.js"></script>
+<script src="../script_js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap');
+/*ОБЩИЕ СТИЛИ*/
+.show {display:block;}
+/*Шапка*/
+a{
+    text-decoration: none;
+    font-family: fantasy;
+}
+header{
+    background: url('../image/fon2.jpg') center no-repeat;
+    background-size: cover;
+
+}
+.header-content{
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    padding: 15px;
+    
+}
+.header-content .logo{
+    margin-left: 20px;
+}
+.header-content .logo img{
+    width: 80px;
+    border-radius: 40px;
+}
+.header-content .autor-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    margin-right: 20px;
+    color: aliceblue;
+    font-size: 15pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.name{
+    white-space: nowrap;
+}
+/*Меню*/
+.navbar-sticky{
+    position: sticky;
+    top: -2px;
+    z-index: 5;
+}
+.navigator-title{
+    margin: 5% 0 0 7%;
+    color: rgb(30, 30, 30);
+    font-size: 14pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navigator-link a{
+    margin-left: 8%;
+    cursor: pointer;
+    color: rgb(55, 55, 71);
+    font-size: 13pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navigator-link a:hover{
+    color: rgb(136, 147, 155);
+}
+.up-arrow{
+    position: fixed;
+    z-index: 1; 
+    right: 10px;
+    bottom: 90px;
+    width: 50px;
+    height: 50px;
+    overflow: none;
+}
+/*Подвал*/
+footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: end;
+    padding: 15px;
+    background-color: rgb(8, 43, 58);
+    color: aliceblue;
+    font-size: 13pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+footer .messendger{
+    display: flex;
+    align-items: center;
+    margin: 0 10;
+    cursor: pointer;
+}
+footer .messendger img{
+    margin-left: 10px;
+    width: 50px;
+    
+}
+
+
+
+@media(max-width: 890px){
+
+    .navigator{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    footer{
+
+        padding: 10px;
+        font-size: 11pt;
+    }
+    footer .messendger img{
+        margin-left: 10px;
+        width: 30px;
+        
+    }
+    .up-arrow{
+        width: 35px;
+        height: 35px;
+        bottom: 60px;
+    }
+}

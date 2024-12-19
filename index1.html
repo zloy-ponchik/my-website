@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт 2.0 - Главная</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style1.css">
+    <link rel="icon" href="image/logo4.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <header id="header">
+        <!--Шапка-->
+        <section class="header-content">
+            <div class="logo"><img src="image/logo4.jpg" alt="logo"></div>
+            <div class="autor-info">
+                <div class="group">ЭФБО-03-23</div>
+                <div class="name">Ярастов Никита</div>
+            </div>
+        </section>
+
+
+    </header>
+    <!--Меню-->
+
+    <div class="navbar-sticky">
+        <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: rgba(8, 82, 147, 0.99);">
+            <div class="container-fluid">
+                <a class="navbar-brand" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
+                    Навигация
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index1.html">Главная</a>
+                        <a class="nav-link" href="pages/index3.html">Первый семестр</a>
+                        <a class="nav-link" href="#">Второй семестр</a>
+                        <a class="nav-link" href="pages/index2.html">Услуги</a>
+                        <a class="nav-link" href="#">Авторизация</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <main>
+        <!--Панель навигации-->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Навигация по сайту</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Закрыть"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <div class="navigator-title">Разделы сайта</div>
+                    <div class="navigator-link" data-bs-dismiss="offcanvas"><a
+                            href="#frontend-title">&#10163;Frontend</a></div>
+                    <div class="navigator-link" data-bs-dismiss="offcanvas"><a href="#backend-title">&#10163;Backend</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="up-arrow"><a href="#header"><img src="image/strelkaicon.svg.png" alt="/\"></a></div>
+
+
+
+        <!--Основной контент-->
+        <section class="content">
+            <section class="content-center">
+                <!--Информация профиля-->
+                <div class="profile-info">
+                    <div class="welcome">
+                        <h1 id="head-h1">Добро Пожаловать <br> на мой сайт!</h1>
+                        <p>Меня зовут Ярастов Никита <br> и я начинающий специалист по веб-разработке</p>
+                    </div>
+                    <div class="icon"><img src="image/logo4.jpg" alt="Icon"></div>
+                </div>
+
+
+
+                <!--Текстовое наполнение-->
+                <div class="content-text">
+                    <h2 id="frontend-title">Frontend</h2>
+                    <p>
+                        Фронтенд — это область разработки ПО, которая фокусируется на создании пользовательского
+                        интерфейса и взаимодействии с пользователем.
+                        В основе фронтенда лежат языки HTML, CSS и JavaScript, которые применяются для создания
+                        веб-страниц, их оформления и добавления интерактивности.
+                        Фронтенд-разработчики занимаются созданием удобных и отзывчивых интерфейсов, которые работают
+                        быстро и без ошибок.
+                    </p>
+                    <p>
+                        Фронтенд-разработчик — это специалист, который создает интерфейсы веб-сайтов и приложений. Проще
+                        говоря, разрабатывает внешний вид интернет-площадок:
+                        это картинки, выпадающие списки, анимация, карточки товаров и все, с чем может взаимодействовать
+                        пользователь. Например, то, каким ты прямо сейчас
+                        видишь этот сайт, — как раз результат работы фронтенд-разработчика.
+                    </p>
+                    <p>
+                        Фронтенд-фреймворки. Отвечают за внешний вид проекта и работают в браузере. С их помощью можно
+                        создавать удобные пользовательские интерфейсы, добавлять
+                        анимацию, адаптировать сайты для разных устройств, чтобы страница выглядела одинаково хорошо на
+                        планшете, телефоне, экране компьютера, телевизора или игровой приставке.
+                    </p>
+                    <iframe src="https://www.youtube.com/embed/cwti7BuWZ0c" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                    <h2 id="backend-title">Backend</h2>
+                    <p>
+                        Бэкенд — начинка сайта или приложения, скрытая от пользователя. Бэкендом называют
+                        программно-аппаратную часть сервиса, которая работает на сервере, а
+                        не в браузере или на компьютере. Бэкенд скрывается за фронтендом: так называют пользовательский
+                        интерфейс, видимую часть сайта или приложения, которая работает на клиентской стороне приложения
+                        или веб-сайта.
+                    </p>
+                    <p>
+                        Бэкенд-разработчик — это специалист, который занимается серверной частью сайтов, мобильных и
+                        десктопных приложений и игр.
+                        Он реализует внутреннюю логику работы приложения, обеспечивает его взаимодействие с базами
+                        данных и внешними сервисами.
+                    </p>
+                    <p>
+                        Бэкенд-разработчик работает с сервером — невидимой частью сайта, где хранится вся информация. Он
+                        создает базы данных и управляет ими, проводит интеграции с внешними сервисами и занимается всем,
+                        что находится
+                        «под капотом» сайта. Работу бэкенд-разработчика обычный пользователь увидеть не может, но именно
+                        благодаря ей сайт функционирует.
+                    </p>
+                    <p>
+                        Сейчас самые распространённые языки для backend-разработки — это Java (для крупных решений), PHP
+                        (для веб-сайтов) и Python (для небольших веб-решений и научных задач). В случае выбора этих
+                        технологий вы сможете
+                        относительно быстро находить сильных специалистов, расширять команду и заменять тех, кто выгорел
+                        или ушёл.
+                    </p>
+                    <iframe src="https://www.youtube.com/embed/rY7cpJPDTTA" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!--"Подвал"-->
+    <footer>
+        <div class="copyright-info">&copy Ярастов Никита </div>
+        <div class="messendger">
+            <img src="image/vklogo.png" alt="vk">
+            <img src="image/metalogo.png" alt="instagram">
+        </div>
+    </footer>
+    <script src="script_js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
